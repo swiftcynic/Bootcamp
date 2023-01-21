@@ -132,6 +132,7 @@ extension OnBoardingView {
                     .font(.headline)
                     .bold()
             }
+            .foregroundColor(.black)
             
         }
         .padding(20)
@@ -153,13 +154,16 @@ extension OnBoardingView {
                     .bold()
                     
                 TextField("Your name here", text: $name)
+                    .foregroundColor(.primary)
                     .font(.title2)
                     .padding(20)
                     .background(.thickMaterial)
                     .cornerRadius(20)
+                    .autocorrectionDisabled(true)
                 
                 Spacer()
             }
+            .foregroundColor(.black)
             .padding(20)
             
         }
@@ -188,6 +192,7 @@ extension OnBoardingView {
                 Spacer()
             }
             .padding(20)
+            .foregroundColor(.black)
         }
         .padding(20)
         .cornerRadius(20)
@@ -202,6 +207,7 @@ extension OnBoardingView {
             VStack(alignment: .leading) {
                 Spacer()
                 Text("How do you identify yourself?")
+                    .foregroundColor(Color.black)
                     .multilineTextAlignment(.leading)
                     .font(.largeTitle)
                     .bold()
@@ -209,24 +215,21 @@ extension OnBoardingView {
                 
                 HStack {
                     Text("I identify as ")
+                        .foregroundColor(Color.black)
                         .font(.title2)
                         .bold()
                     Picker(selection: $gender) {
-                        Text("Others 🧔🏻‍♀️").tag(Gender.others)
-                        Text("Male    🧔🏻‍♂️").tag(Gender.male)
-                        Text("Female 👩🏻").tag(Gender.female)
+                        Text("Others 🧔🏻‍♀️").foregroundColor(Color.black).tag(Gender.others)
+                        Text("Male    🧔🏻‍♂️").foregroundColor(Color.black).tag(Gender.male)
+                        Text("Female 👩🏻").foregroundColor(Color.black).tag(Gender.female)
                     } label: { Text("Gender") }
                         .pickerStyle(InlinePickerStyle())
                         .frame(height: 55)
-                        .background(Color.gray.opacity(0.15))
-                        
                         .cornerRadius(20)
-                        .foregroundColor(Color.white)
                 }
                 Spacer()
             }
             .padding(20)
-            
         }
         .padding(20)
         .cornerRadius(20)

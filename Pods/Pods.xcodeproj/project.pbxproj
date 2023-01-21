@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		12925F95DA56834EC0324EBBF2160938 /* SPConfettiConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0799E85126AEF8B7582DE58ADA0E09 /* SPConfettiConfiguration.swift */; };
 		15C459E9A55ECF833D9C6AA5E3738CDD /* SPConfetti.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7CD7CF44A07AAE89D11E6A35AA54E9 /* SPConfetti.swift */; };
-		184BE0DA51FB7A572B2259A32718D3B7 /* SPConfetti-SPConfetti in Resources */ = {isa = PBXBuildFile; fileRef = 99A3A2574E317C8728D0DF37846F762E /* SPConfetti-SPConfetti */; };
+		184BE0DA51FB7A572B2259A32718D3B7 /* SPConfetti.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 99A3A2574E317C8728D0DF37846F762E /* SPConfetti.bundle */; };
 		1C079201D40FA9FBE30ED65144E689B3 /* SPConfettiParticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E74618CB5BFB39CB0B0072ABD077DC /* SPConfettiParticle.swift */; };
 		2A3239C93DC17C204988E970786DB038 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		30C575BB9548501531DC56F3E372EC86 /* SPConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D0C4C428D47CF1C38F01F1A91E0CCD /* SPConfettiView.swift */; };
@@ -64,9 +64,9 @@
 		81D0C4C428D47CF1C38F01F1A91E0CCD /* SPConfettiView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPConfettiView.swift; path = Sources/SPConfetti/SPConfettiView.swift; sourceTree = "<group>"; };
 		845C283EF30A0EFB177B562B10A7A7FC /* SPConfettiModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPConfettiModifier.swift; path = Sources/SPConfetti/SwiftUI/SPConfettiModifier.swift; sourceTree = "<group>"; };
 		8B2E3DFC76E004793AF8284A690198A5 /* SPConfetti-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SPConfetti-umbrella.h"; sourceTree = "<group>"; };
-		99A3A2574E317C8728D0DF37846F762E /* SPConfetti-SPConfetti */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "SPConfetti-SPConfetti"; path = SPConfetti.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		99A3A2574E317C8728D0DF37846F762E /* SPConfetti.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPConfetti.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AC67B8067E82DE8A7718AC8A4686AB0 /* Delay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Delay.swift; path = Sources/SPConfetti/Extensions/Delay.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0577147047C7ED974BB38B48E73A64E /* SPConfettiParticlesConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPConfettiParticlesConfig.swift; path = Sources/SPConfetti/Models/SPConfettiParticlesConfig.swift; sourceTree = "<group>"; };
 		A12B7EE46C22C3D07CA5AC810F66D8D2 /* Pods-Bootcamp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Bootcamp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A975C50BBC00EE8994382FC2E0030AC3 /* SPConfettiDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPConfettiDelegate.swift; path = Sources/SPConfetti/SPConfettiDelegate.swift; sourceTree = "<group>"; };
@@ -126,7 +126,6 @@
 				C9C6600E4E8FC6ECBA81225DCE35836E /* Resources */,
 				64C826A8F3A5BD3690263DFDFEB3FD9B /* Support Files */,
 			);
-			name = SPConfetti;
 			path = SPConfetti;
 			sourceTree = "<group>";
 		};
@@ -192,7 +191,7 @@
 			children = (
 				7FC20232A2C1A30CBB6C2CC7DFDC9EA0 /* Pods-Bootcamp */,
 				C1E2574DF124F1F78DBB2A6925ECD04C /* SPConfetti */,
-				99A3A2574E317C8728D0DF37846F762E /* SPConfetti-SPConfetti */,
+				99A3A2574E317C8728D0DF37846F762E /* SPConfetti.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -260,7 +259,7 @@
 			);
 			name = "SPConfetti-SPConfetti";
 			productName = SPConfetti;
-			productReference = 99A3A2574E317C8728D0DF37846F762E /* SPConfetti-SPConfetti */;
+			productReference = 99A3A2574E317C8728D0DF37846F762E /* SPConfetti.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		A4D94D19F3035695F3446D3D3EEAC6EA /* SPConfetti */ = {
@@ -343,7 +342,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				184BE0DA51FB7A572B2259A32718D3B7 /* SPConfetti-SPConfetti in Resources */,
+				184BE0DA51FB7A572B2259A32718D3B7 /* SPConfetti.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,6 +584,7 @@
 			baseConfigurationReference = 51AF44D3F493A7C60269328625AAA542 /* SPConfetti.release.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SPConfetti";
+				DEVELOPMENT_TEAM = CS82W2VL6G;
 				IBSC_MODULE = SPConfetti;
 				INFOPLIST_FILE = "Target Support Files/SPConfetti/ResourceBundle-SPConfetti-SPConfetti-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -601,6 +601,7 @@
 			baseConfigurationReference = B7408CCE6E59E016F8F152F891DF7E89 /* SPConfetti.debug.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SPConfetti";
+				DEVELOPMENT_TEAM = CS82W2VL6G;
 				IBSC_MODULE = SPConfetti;
 				INFOPLIST_FILE = "Target Support Files/SPConfetti/ResourceBundle-SPConfetti-SPConfetti-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;

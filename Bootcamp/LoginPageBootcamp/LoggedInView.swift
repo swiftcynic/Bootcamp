@@ -52,6 +52,7 @@ extension LoggedInView {
                 Text("Hello \(currentUserName ?? "How did you get here 🤨")!")
                     .font(.largeTitle)
                     .bold()
+                    .foregroundColor(Color.black)
             }
         }
     }
